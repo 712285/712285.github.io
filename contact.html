@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне - Сабрина Ермальчук</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(to right, #8a2be2, #4b0082);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .nav {
+            background-color: #6a0dad;
+            padding: 10px 0;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav li {
+            margin: 0 15px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .nav a:hover, .nav a.active {
+            background-color: #ffd700;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .main-title {
+            text-align: center;
+            color: #4b0082;
+            margin: 30px 0;
+            font-size: 28px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .info-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            border-left: 5px solid #8a2be2;
+        }
+
+        .info-box h2 {
+            color: #4b0082;
+            margin-bottom: 15px;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 30px 0;
+            padding-left: 30px;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #8a2be2;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background-color: #ffd700;
+            border-radius: 50%;
+            border: 3px solid #8a2be2;
+        }
+
+        .year {
+            font-weight: bold;
+            color: #8a2be2;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #8a2be2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #4b0082;
+        }
+
+        .footer {
+            background-color: #4b0082;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .photo-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .photo-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Сабрина Ермальчук</h1>
+        <p>Танцовщица и студентка из Томска</p>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html" class="active">Обо мне</a></li>
+            <li><a href="dance.html">Танцы</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">Обо мне</h1>
+
+        <div class="photo-section">
+            <img src="me.jpg" alt="Мое фото" style="max-width: 300px;">
+            <p>Это я - Сабрина Ермальчук</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Моя история</h2>
+            <p>Я родилась и выросла в Томске. С детства любила двигаться под музыку, и когда пошла в школу, начала заниматься танцами более серьезно.</p>
+            <p>После школы я поступила в Томский техникум социальных технологий. Именно там я по-настоящему увлеклась танцами и начала участвовать в конкурсах.</p>
+            <p>Сейчас я учусь в Томском педагогическом университете. Я хочу стать хорошим специалистом, но танцы всегда останутся важной частью моей жизни.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Мой путь</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="year">2015-2019</div>
+                    <p>Учеба в школе. Начала заниматься танцами в школьном кружке.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <p>Поступление в Томский техникум социальных технологий. Участие в SKUBAY Chengdu 2019.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2020-2024</div>
+                    <p>Активное участие в танцевальных конкурсах. Несколько побед на региональных фестивалях.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <p>Поступление в Томский педагогический университет.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2025</div>
+                    <p>Победа в фестивале "Танцуй за СПО". Признана "Лучшим танцором".</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h2>Мои увлечения</h2>
+            <ul>
+                <li><i class="fas fa-dancing"></i> Танцы - мое главное увлечение</li>
+                <li><i class="fas fa-music"></i> Пение - люблю петь в свободное время</li>
+                <li><i class="fas fa-users"></i> Работа в команде - нравится готовить выступления с другими</li>
+                <li><i class="fas fa-book"></i> Учеба - стараюсь хорошо учиться в университете</li>
+                <li><i class="fas fa-heart"></i> Помощь другим - участвую в волонтерских проектах</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="dance.html" class="btn">Узнать о моих танцах</a>
+            <a href="contact.html" class="btn">Связаться со мной</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Сабрина Ермальчук. Сайт создан для учебного проекта.</p>
+        <p>Томск, Россия</p>
+    </div>
+</body>
+</html>
